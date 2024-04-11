@@ -26,10 +26,14 @@ public class StorageProblems {
 
     // PROBLEM 1
     /**
-     * Finds and returns the minimum value in the given integer array
+     * This method finds the minimum value in an array of integers
      *
-     * @param array the input integer array to find the minimum value from
-     * @return the minimum value in the input array
+     * Time complexity: O(n), where n is the length of the input array.
+     * The method iterates through each element in the array to find the minimum value.
+     * It updates the minimum value if a smaller number is found while iterating.
+     *
+     * @param array The input array of integers.
+     * @return The minimum value in the array.
      */
         public static int min(int[] array){
             int minimum=array[0];
@@ -43,10 +47,14 @@ public class StorageProblems {
 
     // PROBLEM 2
     /**
-     * Calculates and returns the average value of the elements in the given integer array
+     * This method calculates the average of an array of integers
      *
-     * @param array the input integer array to calculate the average from
-     * @return the average value of the elements in the input array
+     * Time complexity: O(n), where n is the length of the input array.
+     * The method iterates through each element in the array to calculate the sum of all numbers.
+     * It then divides the sum by the length of the array to find the average number.
+     *
+     * @param array The input array of integers.
+     * @return The average of the numbers in the array.
      */
     public static double avg(int[] array){
         double s=0;
@@ -59,10 +67,15 @@ public class StorageProblems {
 
     //PROBLEM 3
     /**
-     * Checks if the given number is a prime number or a composite number
+     * This method checks if a given number is prime or composite
      *
-     * @param n the number to be checked
-     * @return "Prime" if the number is prime, "Composite" if the number is composite
+     * Time complexity: O(n), where n is the input number.
+     * The method iterates through numbers from 2 to n-1 to check for factors of n.
+     * If n is divisible by any number in this range, it is considered composite.
+     * The method returns "Composite" if n is less than 2, otherwise it returns "Prime" if no factors are found.
+     *
+     * @param n The number to be checked for primality.
+     * @return "Prime" if the number is prime, "Composite" otherwise.
      */
     public static String isPrime(int n){
         for (int i = 2; i < n; i++) {
@@ -76,10 +89,14 @@ public class StorageProblems {
 
     //PROBLEM 4
     /**
-     * Calculates the factorial of a given number
+     * This method calculates the factorial of a given number using a recursive approach
      *
-     * @param n the number for which the factorial is to be calculated
-     * @return the factorial of the input number
+     * Time complexity: O(n), where n is the input number.
+     * The recursive algorithm makes n recursive calls, each reducing the input value by 1,
+     * until it reaches the base case where n is equal to 0.
+     *
+     * @param n The number for which the factorial is to be calculated.
+     * @return The factorial of the given number.
      */
     public static int factorial(int n){
         if (n==0)
